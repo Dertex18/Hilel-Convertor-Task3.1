@@ -4,10 +4,11 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    private static final int WATER_FREEZE_F = 32;
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        WelcomeMessage();
+        welcomeMessage();
 
         switch (input.nextInt()) {
             case 1:
@@ -32,14 +33,14 @@ public class Main {
     }
 
     private static double convertFahrenheitToCelsius(double fahrenheit) {
-        return (fahrenheit - 32) * 5 / 9;
+        return (fahrenheit - WATER_FREEZE_F) * 5 / 9;
     }
 
     private static double convertCelsiusToFahrenheit(double celsius) {
-        return  (celsius * 9/5) + 32;
+        return  (celsius * 9/5) + WATER_FREEZE_F;
     }
 
-    private static void WelcomeMessage() {
+    private static void welcomeMessage() {
         System.out.println("""
         Welcome to Temperature Converter
         Version 1.0
