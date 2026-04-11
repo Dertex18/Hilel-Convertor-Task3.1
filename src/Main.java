@@ -28,8 +28,6 @@ public class Main {
                 default:
                     System.out.println("Invalid input!");
         }
-
-
     }
 
     private static double convertFahrenheitToCelsius(double fahrenheit) {
