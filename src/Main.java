@@ -46,6 +46,5 @@ public class Main {
         Version 1.0
         Choose an option:
         """);
-
     }
 }
